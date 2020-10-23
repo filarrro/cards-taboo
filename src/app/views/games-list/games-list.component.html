@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let game of games$ | async">{{ game.key }} {{ game.name }}</li>
+</ul>
+
+<a mat-fab color="primary" routerLink="create">
+<!--  <i class="material-icons" aria-label="Stwórz nową grę">add</i>-->
+  <mat-icon aria-label="Stwórz nową grę">add</mat-icon>
+</a>

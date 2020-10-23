@@ -1,0 +1,6 @@
+<header class="header">
+  <span class="mat-body">{{ (user$ | async)?.email }}</span>
+  <button type="button" mat-button (click)="logout()">WYLOGUJ</button>
+</header>
+
+<router-outlet></router-outlet>

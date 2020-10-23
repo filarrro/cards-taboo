@@ -1,0 +1,23 @@
+<form [formGroup]="form" class="grid" (ngSubmit)="login()">
+  <mat-card>
+    <mat-card-content>
+      <h2 class="mat-h2">Zaloguj się</h2>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Nazwa użytkownika</mat-label>
+        <input matInput formControlName="username" required />
+      </mat-form-field>
+
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Hasło</mat-label>
+          <input type="password" formControlName="password" matInput required />
+        </mat-form-field>
+      </div>
+
+      <mat-card-actions class="footer">
+        <button type="submit" mat-button>DALEJ</button>
+      </mat-card-actions>
+    </mat-card-content>
+  </mat-card>
+</form>

@@ -1,0 +1,15 @@
+:host {
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 1rem 3rem;
+
+  padding: 2rem;
+}
+
+.col-x-full {
+  grid-column: span 2;
+}
